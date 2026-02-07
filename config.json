@@ -1,0 +1,28 @@
+{
+  "interface": "wlp3s0",
+  "anomaly_detection": {
+    "contamination": 0.1,
+    "threshold": -0.5,
+    "random_state": 42
+  },
+  "signature_rules": {
+    "syn_flood": {
+      "enabled": true,
+      "packet_size_threshold": 100,
+      "packet_rate_threshold": 50
+    },
+    "port_scan": {
+      "enabled": true,
+      "packet_size_threshold": 60,
+      "packet_rate_threshold": 100
+    }
+  },
+  "alert_system": {
+    "log_file": "ids_alerts.log",
+    "high_confidence_threshold": 0.8
+  },
+  "capture": {
+    "queue_timeout": 1.0,
+    "capture_filter": ""
+  }
+}
