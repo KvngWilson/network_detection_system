@@ -1,4 +1,11 @@
+.gitignore
+
 # Environments
 .env
 .venv
 env/
+venv/
+
+# Python
+__pycache__/
+.pytest_cache/
